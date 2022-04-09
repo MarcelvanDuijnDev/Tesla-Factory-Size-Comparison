@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e54177052a7a4498cb012340001818, type: 3}
+  m_Name: Tesla Lathrop Factory
+  m_EditorClassIdentifier: 
+  Name: Tesla Lathrop Factory
+  Location: Lathrop, California, United States
+  Products: []
+  OpenDate: 2014
+  Employees: 0
+  SquareMeters: 46200
+  Model: {fileID: 1422833389655143912, guid: 4fca720289911414fb06be177394b3f8, type: 3}
