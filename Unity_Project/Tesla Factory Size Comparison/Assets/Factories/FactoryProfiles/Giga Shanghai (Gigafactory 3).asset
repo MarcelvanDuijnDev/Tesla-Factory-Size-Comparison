@@ -17,5 +17,5 @@ MonoBehaviour:
   Products: []
   OpenDate: 2019
   Employees: 15000
-  SquareMeters: 418000
+  SquareMeters: 850000
   Model: {fileID: 7112041664816988400, guid: 2f1495963b2718d46b5ec993d82b9f66, type: 3}
