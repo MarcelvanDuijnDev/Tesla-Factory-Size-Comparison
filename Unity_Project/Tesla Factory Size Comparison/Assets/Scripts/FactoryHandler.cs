@@ -12,8 +12,8 @@ public class FactoryHandler : MonoBehaviour
     [Header("Settings")]
     public Vector2 Scaling;
 
-    [Header("Human")]
-    public GameObject HumanObj;
+    [Header("Compare Objects")]
+    public List<GameObject> CompareObjects = new List<GameObject>();
 
     [Header("UI")]
     public TextMeshProUGUI UIText_Scaling;
@@ -29,12 +29,18 @@ public class FactoryHandler : MonoBehaviour
     void Start()
     {
         _Scaling = Scaling.y / Scaling.x;
-        HumanObj.transform.localScale *= _Scaling;
-        HumanObj.transform.position = new Vector3(0, HumanObj.transform.localScale.y * 0.5f, 0);
         FactoryProfiles.Sort(Sort_ProfilesBySize);
         CreatFactories();
 
+        //Scale Text
         UIText_Scaling.text = Scaling.x.ToString() + ":" + Scaling.y.ToString();
+
+        //Compare Objects
+        for (int i = 0; i < CompareObjects.Count; i++)
+        {
+            CompareObjects[i].transform.localScale *= _Scaling;
+            CompareObjects[i].transform.position = new Vector3(CompareObjects[i].transform.position.x, CompareObjects[i].transform.localScale.y * 0.5f, CompareObjects[i].transform.position.z);
+        }
     }
 
     private void Update()
